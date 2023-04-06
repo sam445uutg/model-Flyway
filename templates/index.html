@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet"></link>
+    </head>
+
+        <body>
+            <div class ='main'>
+            <h1>Price Prediction of fare flight</h1>
+            <form method="post" action="/perdict">
+                <div class="contianer">
+                <label > Enter Source :</label>
+                <input type="text" list="source" class="input_value" placeholder="Enter source places" name="src">
+                <datalist id="source">
+                    <option value="MUM">Mumbai</option>
+                    <option value="CHE">Chennai</option>
+                    <option value="KOL">Kolkata</option>
+                    <option value="DEL">Delhi</option>
+                    <option value="BAN">Banglore</option>
+                    <option value="HYD">Hyderbad</option>
+                    <option value="COC">Cochin</option>
+                    <option value="LOK">Lucknow</option>
+                    <option value="NDEL">New Delhi</option>
+                    <option value="DEN">Dehradun</option>
+                    <option value="BOP">Bopal</option>
+                    <option value="AMD">Ahmedabad</option>
+                    <option value="KOC">Kochi</option>
+                </datalist>
+                </div>
+                <div class="contianer">
+                    <label > Enter Destination of flight:</label>
+                <input type="text" list="destination" class="input_value" placeholder="Enter destination places" name="den">
+                <datalist id="destination">
+                    <option value="MUM">Mumbai</option>
+                    <option value="CHE">Chennai</option>
+                    <option value="KOL">Kolkata</option>
+                    <option value="DEL">Delhi</option>
+                    <option value="BAN">Banglore</option>
+                    <option value="HYD">Hyderbad</option>
+                    <option value="COC">Cochin</option>
+                    <option value="LOK">Lucknow</option>
+                    <option value="NDEL">New Delhi</option>
+                    <option value="DEN">Dehradun</option>
+                    <option value="BOP">Bopal</option>
+                    <option value="AMD">Ahmedabad</option>
+                    <option value="KOC">Kochi</option>
+                </datalist></div>
+                <div class="date_flight">
+                Select Date of flight :
+                <input type="date" name="date_flight" class="input_value" placeholder="Select date"></div>
+                <div class="dep_time">
+                    <label>Enter Departure Time </label>
+                    <input type="text" name="dep_hour"class="input_value" >hr
+                    <input type="text" name="dep_min"class="input_value" >min
+                </div>
+                <div class="arrival_time">
+                    <label>Enter Arrival Time: </label>
+                    <input type="text" name="arrival_hour"class="input_value" >hr
+                    <input type="text" name="arrival_min"class="input_value" >min
+                </div>
+                <div class="contianer">
+                    <label>Enter airline company:</label>
+               <input type="text" list="airline" class="input_value" placeholder="Enter  airline company" name="airline">
+               <datalist id="airline">
+                <option value="A_A_I">air India</option>
+<option value="A_G">GoAir</option>
+<option value="A_J_A">Jet Airway</option>
+<option value="A_J_A_P">Jet Airways Business</option>
+<option value="A_M_C">Multiple Carries</option>
+<option value="A_M_C_E">Multiple Carries Permium economy</option>
+<option value="A_S">Spicejet</option>
+                <option value="A_I">Indigo</option>
+                <option value="A_V">Vistara</optin>
+                <option value="A_V_P_E">Vistara Permium economy</option>
+                <option value="A_T">Turjet</option>
+               </datalist></div>
+               <div class="contianer">
+                <label>Enter number stops: </label>
+                <input type="text" name="no_stops"class="input_value" >
+               </div>
+               <div class="contianer">
+                <label>Duration :</label>
+                <input type="text" name="duration_hour"class="input_value" >hr
+                    <input type="text" name="duration_min"class="input_value" >min
+               </div>
+               <input type="submit" class="button" value="Predit">
+            </from>
+        </div>
+        </body>
+    </head>
+</html>
